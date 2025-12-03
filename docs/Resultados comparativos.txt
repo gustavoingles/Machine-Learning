@@ -1,0 +1,115 @@
+Resultados comparativos dos modelos (por extenso, completo e acadêmico)
+
+A tabela de resultados obtida no Orange apresenta as métricas dos principais algoritmos de classificação aplicados ao dataset p33, cujo objetivo é prever o cancelamento dos clientes.
+As métricas analisadas foram: AUC, Accuracy, F1-score, Precision, Recall e CA (classification accuracy do Orange).
+Modelo com melhor desempenho
+
+Com base nas métricas apresentadas, o melhor modelo para o problema é:
+
+⭐ Regressão Logística
+Justificativas:
+
+Maior AUC de todos os modelos (0.864)
+→ Melhor capacidade de distinguir corretamente entre "cancelar" e "não cancelar".
+
+CA alta (0.831)
+→ Excelente taxa de acerto geral.
+
+Ótimo equilíbrio entre precision, recall e F1
+→ Não só acerta muito, mas erra pouco.
+
+Modelo simples, estável e com baixa variância
+→ Evita overfitting, diferente da Árvore.
+
+Desempenho superior até mesmo à Rede Neural e ao Random Forest, que normalmente são muito fortes.
+
+🧠 6. Conclusão Geral
+
+Após a comparação dos modelos no Orange, conclui-se que a Regressão Logística foi o modelo mais eficaz para prever cancelamentos no dataset p33.
+Ela apresentou o maior AUC, alta acurácia, boa estabilidade, além de excelente equilíbrio nas métricas de classificação.
+
+Em segundo lugar ficaram a Rede Neural e o Random Forest, que também ofereceram desempenho robusto, porém ligeiramente inferiores ao modelo vencedor.
+
+🔎 🔸 Logistic Regression
+
+AUC: 0.864
+
+CA: 0.831
+
+Precision: 0.821
+
+Recall: 0.831
+
+F1-score: 0.498
+
+➡️ Análise:
+A Regressão Logística apresentou excelente desempenho global.
+É o modelo com maior AUC entre todos (0.864), mostrando forte capacidade de separação entre canceladores e não canceladores.
+Também apresenta ótimo equilíbrio entre precision e recall, o que significa que acerta bem e erra pouco.
+
+🔎 🔸 kNN
+
+AUC: 0.653
+
+CA: 0.758
+
+Precision: 0.728
+
+Recall: 0.758
+
+F1-score: 0.240
+
+➡️ Análise:
+O kNN teve o segundo pior AUC entre os modelos.
+Apesar de uma accuracy aceitável (0.758), o F1-score é fraco, indicando dificuldade para classificar casos mais complexos.
+É sensível a escala e variação dos dados.
+
+🔎 🔸 Tree (Árvore de Decisão)
+
+AUC: 0.623
+
+CA: 0.762
+
+Precision: 0.755
+
+Recall: 0.762
+
+F1-score: 0.325
+
+➡️ Análise:
+Apresentou o pior AUC (0.623).
+Embora tenha boa acurácia, árvores tendem a sofrer overfitting, explicando a queda no AUC e equilíbrio ruim entre classes.
+
+🔎 🔸 Random Forest
+
+AUC: 0.815
+
+CA: 0.821
+
+Precision: 0.809
+
+Recall: 0.821
+
+F1-score: 0.466
+
+➡️ Análise:
+O Random Forest apresentou excelente desempenho geral.
+É estável, robusto e melhora o desempenho da árvore individual.
+Teve a segunda maior AUC (0.815), ficando atrás apenas da Regressão Logística.
+
+🔎 🔸 Neural Network
+
+AUC: 0.852
+
+CA: 0.829
+
+Precision: 0.819
+
+Recall: 0.829
+
+F1-score: 0.496
+
+➡️ Análise:
+O desempenho da rede neural foi muito bom, superando Random Forest e SVM, com AUC alto (0.852).
+Mostra capacidade de capturar relações não lineares no dataset.
+
